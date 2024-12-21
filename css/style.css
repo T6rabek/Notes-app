@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: left;
+  background: #b0a4fc;
+}
+
+.container {
+  margin: 100px 150px;
+}
+
+.title {
+  display: flex;
+  color: #fff;
+}
+
+.title img {
+  width: 50px;
+  transform: translateY(-10px);
+}
+
+.create-button {
+  background: #8370ff;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.create-button img {
+  width: 25px;
+  cursor: pointer;
+}
+
+.create-button button {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-family: verdana;
+  color: #fff;
+}
+
+.note-container {
+  background: #fff;
+  width: 300px;
+  min-height: 200px;
+  height: auto;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: verdana;
+  outline: none;
+  border: none;
+  position: relative;
+  display: none;
+}
+
+.note-container img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.note-container textarea {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  resize: none;
+  overflow: hidden;
+  line-height: 1.5;
+}
+
+.note-container.visible {
+  display: block;
+}
